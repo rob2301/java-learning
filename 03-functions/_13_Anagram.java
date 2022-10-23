@@ -20,8 +20,8 @@ public class _13_Anagram {
     public static boolean isAnagram(String first, String second) {
         if (first.length() != second.length()) return false;
 
-        String[] firstArray =  first.split("");
-        String[] secondArray =  second.split("");
+        String[] firstArray =  first.toLowerCase().split("");
+        String[] secondArray =  second.toLowerCase().split("");
 
         Arrays.sort(firstArray);
         Arrays.sort(secondArray);
