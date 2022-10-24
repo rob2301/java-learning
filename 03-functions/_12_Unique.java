@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class _12_Unique {
     public static void main(String[] args) {
@@ -11,8 +10,8 @@ public class _12_Unique {
         //  should print: `[1, 11, 34, 52, 61]`
     }
 
-    public static List<Integer> findUniqueItems(int[] array) {
-        List<Integer> result = new ArrayList<>();
+    public static ArrayList<Integer> findUniqueItems(int[] array) {
+        ArrayList<Integer> result = new ArrayList<>();
 
         for (int element : array) {
             if (!result.contains(element)) {
